@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: #2a2a2a;
+        }
+        .c-item {
+            height: 500px;
+        }
+
+        .c-img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+        }
+
+        .cart {
+            margin-top: 100px;
+            display: flex;
+            justify-content: space-evenly;
+            height: 400px;
+        }
+        .carts{
+            transition: transform 0.3s ease;
+        }
+        .carts:hover{
+            transform: scale(1.1);
+            box-shadow: 10px;
+        }
+        .footer{
+            color: whitesmoke;
+            margin-top: 120px;
+            text-align: center;
+        }
+        .buttons{
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .buttons:hover{
+            transform: scale(1.15);
+            background-color: #474545;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide ">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item" data-bs-interval="10000">
+                    <img src="https://images.pexels.com/photos/4668510/pexels-photo-4668510.jpeg"
+                        class="d-block w-100 c-img" alt="pic">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: wheat;"><i>Where Luxury Meets Elegance</i></h5>
+                        <p style="color: whitesmoke;"><i>Discover a world of sophistication with our exclusive collection of fragrances.</i></p>
+                    </div>
+                </div>
+                <div class="carousel-item c-item" data-bs-interval="2000">
+                    <img src="https://images.pexels.com/photos/4668527/pexels-photo-4668527.jpeg"
+                        class="d-block w-100 c-img" alt="pic2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: wheat;"><i>A Fragrance That Defines You</i></h5>
+                        <p style="color: whitesmoke;"><i>Crafted with rare ingredients to create an unforgettable scent</i></p>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="https://images.pexels.com/photos/4668556/pexels-photo-4668556.jpeg"
+                        class="d-block w-100 c-img" alt="pic3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: wheat;"><i>Timeless Beauty, Infinite Grace</i></h5>
+                        <p style="color: whitesmoke;"><i>Indulge in the essence of luxury and make every moment memorable.</i></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span style="color: white" class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="card bg-dark carts" style="width: 18rem;">
+            <img src="https://images.pexels.com/photos/3910071/pexels-photo-3910071.jpeg" class="card-img-top"
+                alt="perfume pic">
+            <div class="card-body">
+                <h5 style="color: wheat;" class="card-title"><i><b>Be someones special</b></i></h5>
+                <p style="color: whitesmoke;" class="card-text"><i>This perfume would be your special one for your loved ones, And it would be you Valentine</i></p>
+                <a href="#" class="btn btn-primary btn-secondary buttons"><i><b>Visit here</b></i></a>
+            </div>
+        </div>
+        <div class="card bg-dark carts" style="width: 18rem;">
+            <img style="height: 200px;" src="https://images.pexels.com/photos/10831402/pexels-photo-10831402.jpeg" class="card-img-top"
+                alt="perfume pic">
+            <div class="card-body">
+                <h5 style="color: wheat;" class="card-title"><i><b>Combo</b></i></h5>
+                <p style="color: whitesmoke;" class="card-text"><i>This special combo for your loved ones who cares you a lot at any situation, You should go for it </i></p>
+                <a href="#" class="btn btn-primary btn-secondary buttons"><i><b>Visit here</b></i></a>
+            </div>
+        </div>
+        <div class="card bg-dark carts" style="width: 18rem;">
+            <img src="https://images.pexels.com/photos/8625545/pexels-photo-8625545.jpeg" class="card-img-top"
+                alt="perfume pic">
+            <div class="card-body">
+                <h5 style="color: wheat;" class="card-title"><i><b>High Quality Perfume</b></i></h5>
+                <p style="color: whitesmoke;" class="card-text"><i>Perfumes is not only about smell it also about the memories, whenever you smell, then you feel that moment</i></p>
+                <a href="#" class="btn btn-primary btn-secondary buttons"><i><b>Visit here</b></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h6>All Rights Reserve &#169</h6>
+        <i class="fa-regular fa-copyright"></i>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
